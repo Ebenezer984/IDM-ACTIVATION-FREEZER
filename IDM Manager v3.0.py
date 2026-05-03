@@ -213,7 +213,7 @@ def run_batch_file(parameter="", show_output=True):
     try:
         if parameter:
             show_progress(f"Running command with parameter: {parameter}")
-            log_message(f"Executing: zied.cmd {parameter}", "INFO")
+            log_message(f"Executing: ECG.cmd {parameter}", "INFO")
             
             # Use PowerShell to run the batch file with better encoding support
             cmd = f'cmd.exe /c "chcp 65001 >nul && \"{batch_file}\" {parameter}"'
@@ -531,7 +531,7 @@ def check_for_updates():
                 log_message(f"Up to date (v{VERSION})", "INFO")
             else:
                 print(Fore.YELLOW + "\n⚠️  A new version is available!")
-                print(Fore.CYAN + "Visit https://github.com/zinzied/IDM-Freezer to download the latest version.")
+                print(Fore.CYAN + "Visit https://github.com/Ebenezer984/IDM-ACTIVATION-FREEZER.git to download the latest version.")
                 log_message(f"Update available: {latest_version}", "INFO")
         else:
             print(Fore.RED + "\n❌ Failed to check for updates.")
@@ -675,7 +675,7 @@ def main():
             log_message("Opened IDM download page", "INFO")
             input(Fore.YELLOW + "Press Enter to continue...")
         elif choice == "7":
-            webbrowser.open("https://github.com/zinzied/IDM-Freezer")
+            webbrowser.open("https://github.com/Ebenezer984/IDM-ACTIVATION-FREEZER.git")
             print(Fore.GREEN + "\n✓ Browser opened!")
             log_message("Opened GitHub repository", "INFO")
             input(Fore.YELLOW + "Press Enter to continue...")
