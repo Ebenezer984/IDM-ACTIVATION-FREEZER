@@ -513,7 +513,7 @@ def check_for_updates():
         # Try to fetch the latest version from GitHub
         result = subprocess.run(
             ['powershell', '-Command',
-             "(Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/zinzied/IDM-Freezer/main/version.txt' -UseBasicParsing).Content.Trim()"],
+             "(Invoke-WebRequest -Uri 'https://github.com/Ebenezer984/IDM-ACTIVATION-FREEZER/blob/main/version.txt' -UseBasicParsing).Content.Trim()"],
             capture_output=True,
             text=True,
             timeout=10
