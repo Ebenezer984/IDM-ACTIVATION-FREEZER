@@ -8,7 +8,7 @@
 ::
 ::   IDM Activation Script (By ECG)
 ::
-::   Homepages: https://github.com/zinzied
+::   Homepages: https://github.com/Ebenezer984
 ::
 ::       Telegram: @BeatMonst3r
 ::
@@ -62,7 +62,7 @@ exit /b
 ::========================================================================================================================================
 
 set "blank="
-set "mas=https://github.com/znzied"
+set "mas=https://github.com/Ebenezer984"
 
 ::  Check if Null service is working, it's important for the batch script
 
@@ -72,7 +72,7 @@ echo:
 echo Null service is not running, script may crash...
 echo:
 echo:
-echo Help - %mas%ZIED-Help#troubleshoot
+echo Help - %mas%ECG-Help#troubleshoot
 echo:
 echo:
 ping 127.0.0.1 -n 10
@@ -366,7 +366,7 @@ if %_freeze%==1 (set frz=1&goto :_activate)
 :MainMenu
 
 cls
-title  IDM Activation Script %ZIED%
+title  IDM Activation Script %ECG%
 if not defined terminal mode 75, 28
 
 echo:
@@ -375,7 +375,7 @@ call :_color2 %_White% "             " %_Green% "Created By ECG"
 echo:            ___________________________________________________
 echo:
 echo:               Telegram: @BeatMonst3r
-echo:               Github: https://github.com/zinzied
+echo:               Github: https://github.com/Ebenezer984
 echo:            ___________________________________________________
 echo:
 echo:               [1] Activate
@@ -397,7 +397,7 @@ set _erl=%errorlevel%
 if %_erl%==8 exit /b
 if %_erl%==7 goto :_check_updates
 if %_erl%==6 goto :_check_status
-if %_erl%==5 start https://github.com/zinzied/IDM-Freezer & goto MainMenu
+if %_erl%==5 start https://github.com/Ebenezer984/IDM-ACTIVATION-FREEZER & goto MainMenu
 if %_erl%==4 start https://www.internetdownloadmanager.com/download.html & goto MainMenu
 if %_erl%==3 goto :_reset
 if %_erl%==2 (set frz=1&goto :_activate)
@@ -427,7 +427,7 @@ if not defined _int (
 echo Current version: %ver%
 echo:
 
-%psc% "$ErrorActionPreference = 'Stop'; try { $response = Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/zinzied/IDM-Freezer/main/version.txt' -UseBasicParsing; $latestVersion = $response.Content.Trim(); Write-Output $latestVersion } catch { Write-Output 'Error' }" > "%temp%\idm_version.txt"
+%psc% "$ErrorActionPreference = 'Stop'; try { $response = Invoke-WebRequest -Uri 'https://github.com/Ebenezer984/IDM-ACTIVATION-FREEZER/blob/main/version.txt' -UseBasicParsing; $latestVersion = $response.Content.Trim(); Write-Output $latestVersion } catch { Write-Output 'Error' }" > "%temp%\idm_version.txt"
 
 set /p _latest_ver=<"%temp%\idm_version.txt"
 del /f /q "%temp%\idm_version.txt" %nul%
@@ -445,7 +445,7 @@ if "%ver%"=="%_latest_ver%" (
 ) else (
     call :_color %Yellow% "A new version is available!"
     echo:
-    echo Visit https://github.com/zinzied/IDM-Freezer to download the latest version.
+    echo Visit https://github.com/Ebenezer984 to download the latest version.
 )
 
 echo %line%
