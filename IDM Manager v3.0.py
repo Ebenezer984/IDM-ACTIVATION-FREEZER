@@ -127,7 +127,7 @@ def print_header():
     print(Fore.GREEN + "=" + Fore.GREEN + f" Version {VERSION} ".center(68) + Fore.GREEN + "=")
     print(Fore.GREEN + "=" * 70)
     print(Fore.GREEN + """
-      ███████╗       █████╗       █████╗®
+     ███████╗       █████╗       █████╗®
      ██╔════╝     ██╔════╝     ██╔════╝
      █████╗       ██║          ██║ ████╗
      ██╔══╝       ██║          ██║   ██║
